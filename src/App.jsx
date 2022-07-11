@@ -6,7 +6,7 @@ function App() {
 
   return (
 
-    <h1>CRM -React</h1>
+    <h1 className='text-6xl font-extrabold'>CRM -React</h1>
   )
 }
 
