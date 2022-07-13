@@ -21,8 +21,27 @@ const Formulario = () => {
                 notas:''
     })
 
-    const handleSubmit = (valores)=>{
+    const handleSubmit = async (valores)=>{
         console.log(valores);
+        try {
+            const url = "http://localhost:4000/clientes"
+
+            const respuesta = await fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(valores),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+
+            })
+            console.log(respuesta);
+            const resultado = await respuesta.json()
+            console.log(resultado);
+            
+        } catch (error) {
+            console.log(error);
+        }
+
     }
 
   return (

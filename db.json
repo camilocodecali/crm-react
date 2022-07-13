@@ -1,0 +1,12 @@
+{
+  "clientes": [
+    {
+      "nombre": "juan",
+      "empresa": "Camilo Code",
+      "email": "rodriguez.camilo@hotmail.es",
+      "telefono": "3156719123",
+      "notas": "ok",
+      "id": 1
+    }
+  ]
+}
