@@ -1,4 +1,5 @@
 import {useState,useEffect} from 'react'
+import Cliente from '../components/Cliente';
 
 const Inicio = () => {
 
@@ -42,6 +43,12 @@ const Inicio = () => {
                 </tr>
               </thead>
               <tbody>
+                {clientes.map( cliente => (
+                  <Cliente 
+                      key={cliente.id}
+                      cliente={cliente}
+                  />
+                ))}
 
               </tbody>
           </table>
