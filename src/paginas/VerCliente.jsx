@@ -4,12 +4,11 @@ import Spinner from "../components/Spinner";
 
 const VerCliente = () => {
   const [cliente, setCliente] = useState([]);
-  const [cargando, setCargando] = useState(false);
+  const [cargando, setCargando] = useState(true);
 
   const { id } = useParams();
 
   useEffect(() => {
-    setCargando(!cargando);
     const obtenerClienteAPI = async () => {
       try {
         const url = `http://localhost:4000/clientes/${id}`;
