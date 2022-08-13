@@ -13,8 +13,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-            <Route index path='/clientes' element={<Layout/>}>
-                <Route  element={<Inicio/>} />
+            <Route path='/clientes' element={<Layout/>}>
+                <Route index element={<Inicio/>} />
                 <Route path='nuevo' element={<NuevoCliente/>} />
                 <Route path='editar/:id' element={<EditarCliente/>} />
                 <Route path=':id' element={<VerCliente/>} />
