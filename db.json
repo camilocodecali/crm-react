@@ -1,14 +1,6 @@
 {
   "clientes": [
     {
-      "nombre": "juan",
-      "empresa": "Camilo Code",
-      "email": "rodriguez.camilo@hotmail.es",
-      "telefono": "3156719123",
-      "notas": "ok",
-      "id": 1
-    },
-    {
       "nombre": "Camilo",
       "empresa": "Camilo Code",
       "email": "camilo@gmail.com",
@@ -33,12 +25,28 @@
       "id": 4
     },
     {
-      "nombre": "Comida actualizado",
-      "empresa": "WONDER GOLD",
-      "email": "marketing@wondergoldusa.com",
-      "telefono": "3054188480",
+      "nombre": "Alejandra",
+      "empresa": "Marketing 929",
+      "email": "alejitahot@gmail.com",
+      "telefono": "",
       "notas": "",
-      "id": 5
+      "id": 6
+    },
+    {
+      "nombre": "Alejandra",
+      "empresa": "Marketing 929",
+      "email": "alejitahot@gmail.com",
+      "telefono": "3157485412",
+      "notas": "actualice telefono",
+      "id": 7
+    },
+    {
+      "nombre": "Carlitos",
+      "empresa": "CBD",
+      "email": "carlitoselmejor@gmail.com",
+      "telefono": "4578954",
+      "notas": "bueno cliente",
+      "id": 8
     }
   ]
 }
