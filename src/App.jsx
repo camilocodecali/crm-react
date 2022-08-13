@@ -8,13 +8,13 @@ import VerCliente from './paginas/VerCliente'
 
 function App() {
 
-  console.log(import.meta.env);
+  console.log(import.meta.env.VITE_API_URL)
 
   return (
     <BrowserRouter>
       <Routes>
-            <Route path='/clientes' element={<Layout/>}>
-                <Route index element={<Inicio/>} />
+            <Route index path='/clientes' element={<Layout/>}>
+                <Route  element={<Inicio/>} />
                 <Route path='nuevo' element={<NuevoCliente/>} />
                 <Route path='editar/:id' element={<EditarCliente/>} />
                 <Route path=':id' element={<VerCliente/>} />
