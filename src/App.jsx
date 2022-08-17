@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import Layout from './layout/Layout'
 import Inicio from './paginas/Inicio'
 import NuevoCliente from './paginas/NuevoCliente'
@@ -19,9 +19,10 @@ function App() {
                 <Route path='editar/:id' element={<EditarCliente/>} />
                 <Route path=':id' element={<VerCliente/>} />
             </Route>
-            
       </Routes>
+      <Link to='/clientes' >Clientes</Link>
     </BrowserRouter>
+    
   )
 }
 
